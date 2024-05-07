@@ -5,10 +5,6 @@ function Home() {
   return <Wrapper className="text">Home</Wrapper>;
 }
 
-const Wrapper = styled.section`
-  background-color: ${({ theme }) => theme.colors.bg};
-  width: 20rem;
-  height: 20rem;
-`;
+const Wrapper = styled.section``;
 
 export default Home;

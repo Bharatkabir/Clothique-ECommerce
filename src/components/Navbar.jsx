@@ -1,51 +1,29 @@
 import React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/images/logo/logo.png";
+import { NavLink } from "react-bootstrap";
+import styled from "styled-components";
+import Nav from "./Nav";
 function Navbar() {
-  const [menuToggle, setMenuToggle] = useState(false);
-  const [socialToggle, setsocialToggle] = useState(false);
-  const [headerFixed, setheaderFixed] = useState(false);
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      setheaderFixed(true);
-    } else {
-      setheaderFixed(false);
-    }
-  });
   return (
-    <header
-      className={`header-section style-4 ${
-        headerFixed ? "header-fixed fadeInUp" : ""
-      }`}
-    >
-      <div className={`header-top d-md-none ${socialToggle ? "open" : ""}`}>
-        <div className="container">
-          <div className="header-top-area">
-            <Link className="lab-btn me-3" to="/signup">
-              <span>Create Account</span>
-            </Link>
-            <Link to="/login">
-              <span>Log in</span>
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="header-button">
-        <div className="container">
-          <div className="header-wrapper">
-            <div className="logo-search-acte">
-              <Link to={"/"}>
-                <img src={logo} id="img" alt="" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <MainHeader>
+      <NavLink to="/">
+        <img src="/src/assets/images/logo/logo.png" alt="" />
+      </NavLink>
+      <Nav />
+    </MainHeader>
   );
 }
 
+const MainHeader = styled.header`
+  padding: 0 4.8rem;
+  height: 10rem;
+  background-color: ${({ theme }) => theme.colors.bg};
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .logo {
+    height: 5rem;
+  }
+`;
 export default Navbar;
