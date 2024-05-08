@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <MainHeader>
       <NavLink to="/">
-        <img src="/src/assets/images/logo/logo.png" alt="" />
+        <img src="/src/assets/images/logo.png" alt="" />
       </NavLink>
       <Nav />
     </MainHeader>

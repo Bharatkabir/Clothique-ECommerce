@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
+import { CgMenu, CgClose } from "react-icons/cg";
 const Nav = () => {
   const Nav = styled.nav`
     .navbar-lists {
@@ -67,14 +68,14 @@ const Nav = () => {
       font-size: 1.4rem;
       padding: 0.8rem 1.4rem;
     }
-    @media (max-width: ${({ theme }) => theme.media}) {
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
       .mobile-navbar-btn {
         display: inline-block;
         z-index: 9999;
         border: ${({ theme }) => theme.colors.black};
 
         .mobile-nav-icon {
-          font-size: 4.2rem;
+          font-size: 3rem;
           color: ${({ theme }) => theme.colors.black};
         }
       }
@@ -175,6 +176,10 @@ const Nav = () => {
             </NavLink>
           </li>
         </ul>
+        <div className="mobile-navbar-btn">
+          <CgMenu name="menu-outline" className="mobile-nav-icon" />
+          <CgClose name="close-outline" className="mobile-nav-icon" />
+        </div>
       </div>
     </Nav>
   );
