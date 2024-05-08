@@ -15,7 +15,7 @@ function Navbar() {
 
 const MainHeader = styled.header`
   padding: 0 4.8rem;
-  height: 10rem;
+  height: 7rem;
   background-color: ${({ theme }) => theme.colors.bg};
   display: flex;
   justify-content: space-between;
@@ -24,6 +24,9 @@ const MainHeader = styled.header`
 
   .logo {
     height: 5rem;
+  }
+  img {
+    width: 55%;
   }
 `;
 export default Navbar;
