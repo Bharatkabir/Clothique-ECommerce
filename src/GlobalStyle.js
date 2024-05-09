@@ -147,8 +147,8 @@ input, textarea{
    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
 }
     input[type="submit"]{
-    max-width: 16rem;
-    margin-top: 2rem;
+    max-width: 13rem;
+    margin-top: 1rem;
     background-color: ${({ theme }) => theme.colors.btn};
     color: ${({ theme }) => theme.colors.white};
     padding: 1.4rem 2.2rem;
@@ -157,6 +157,7 @@ input, textarea{
     text-transform: uppercase;
     font-size: 1.8rem;
     cursor: pointer;
+    border-radius:5%;
     }
 
 
