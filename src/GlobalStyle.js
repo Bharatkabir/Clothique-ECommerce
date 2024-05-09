@@ -49,8 +49,8 @@ h4 {
 
 h1 {
   color: ${({ theme }) => theme.colors.heading};
-  font-size: 6rem;
-  font-weight: 900;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
  h2 {
@@ -82,27 +82,37 @@ ${"" /* resuable code section  */}
   margin: 0 auto;
 }
 
+/* Flex container styles with space-evenly */
 .grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Distribute items evenly along the main axis */
   gap: 9rem;
 }
 
-.grid-two-column {
-  grid-template-columns: repeat(2, 1fr);
-
+/* Two-column layout */
+.grid-two-column > * {
+  flex: 0 0 calc(51% - 26.5rem); 
 }
 
-.grid-three-column {
-  grid-template-columns: repeat(3, 1fr);
+/* Three-column layout */
+.grid-three-column > * {
+  flex: 1 1 calc(33.33% - 6rem); /* Adjust as needed based on gap */
+  margin-bottom: 9rem;
 }
 
-.grid-four-column{
-   grid-template-columns: 1fr 1.2fr .5fr .8fr ;
+/* Four-column layout */
+.grid-four-column > * {
+  flex: 1 1 calc(25% - 6rem); /* Adjust as needed based on gap */
+  margin-bottom: 9rem;
 }
 
-.grid-five-column{
-  grid-template-columns: repeat(5, 1fr);
+/* Five-column layout */
+.grid-five-column > * {
+  flex: 1 1 calc(20% - 4.8rem); /* Adjust as needed based on gap */
+  margin-bottom: 9rem;
 }
+
 
   .common-heading {
       font-size: 3.8rem;

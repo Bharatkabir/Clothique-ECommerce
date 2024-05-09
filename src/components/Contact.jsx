@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 function Contact() {
-  return <Wrapper className="test">Home</Wrapper>;
+  return <Wrapper className="test">Contact</Wrapper>;
 }
 
 const Wrapper = styled.section`
