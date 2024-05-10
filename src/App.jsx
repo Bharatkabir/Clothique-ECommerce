@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
+import Footer from "./components/Footer";
 
 function App() {
   const theme = {
@@ -35,6 +36,7 @@ function App() {
         <GlobalStyle />
         <Navbar />
         <Outlet />
+        <Footer />
       </ThemeProvider>
     </>
   );

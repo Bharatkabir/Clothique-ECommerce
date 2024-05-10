@@ -147,7 +147,7 @@ input, textarea{
    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
 }
     input[type="submit"]{
-    max-width: 13rem;
+    max-width: 15rem;
     margin-top: 1rem;
     background-color: ${({ theme }) => theme.colors.btn};
     color: ${({ theme }) => theme.colors.white};
