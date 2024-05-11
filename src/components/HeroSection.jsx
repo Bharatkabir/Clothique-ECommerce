@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Button } from "../assets/js/Button";
-import Services from "./Services";
-import Trusted from "./Trusted";
 
 function HeroSection({ mydata }) {
   const { name } = mydata;
@@ -31,13 +29,11 @@ function HeroSection({ mydata }) {
           </div>
         </div>
       </div>
-      <Services />
-      <Trusted />
     </Wrapper>
   );
 }
 const Wrapper = styled.section`
-  padding: 12rem 0;
+  padding: 10rem 0;
   img {
     min-width: 10rem;
     height: 10rem;
@@ -74,15 +70,15 @@ const Wrapper = styled.section`
       content: "";
       width: 60%;
       height: 80%;
-      background-color: rgba(81, 56, 238, 0.4);
+      background-color: rgb(207 106 177 / 55%);
       position: absolute;
-      left: 50%;
-      top: -5rem;
+      left: 43%;
+      top: -3rem;
       z-index: -1;
     }
   }
   .img-style {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 
@@ -100,9 +96,9 @@ const Wrapper = styled.section`
     figure::after {
       width: 50%;
       height: 100%;
-      left: 0;
-      top: 10%;
-      background-color: rgba(81, 56, 238, 0.4);
+      left: 50%;
+      top: -14%;
+      background-color: rgb(191 43 202 / 51%);
     }
   }
 `;

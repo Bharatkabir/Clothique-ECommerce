@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import Footer from "./components/Footer";
+import { AppProvider } from "./context/ProductsContext";
 
 function App() {
   const theme = {
@@ -31,14 +32,14 @@ function App() {
   };
 
   return (
-    <>
+    <AppProvider>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Navbar />
         <Outlet />
         <Footer />
       </ThemeProvider>
-    </>
+    </AppProvider>
   );
 }
 

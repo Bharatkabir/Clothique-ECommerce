@@ -78,7 +78,7 @@ li {
 ${"" /* resuable code section  */}
 
 .container {
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -92,7 +92,7 @@ ${"" /* resuable code section  */}
 
 /* Two-column layout */
 .grid-two-column > * {
-  flex: 0 0 calc(51% - 26.5rem); 
+  flex: 0 0 calc(51% - 15.5rem); 
 }
 
 /* Three-column layout */
@@ -113,15 +113,22 @@ ${"" /* resuable code section  */}
   margin-bottom: 9rem;
 }
 
-
+.card-data-flex{
+  display: flex;
+    justify-content: space-between;
+}
   .common-heading {
-      font-size: 3.8rem;
-      font-weight: 600;
-      margin-bottom: 6rem;
-      text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-transform: capitalize;
     }
 
      .intro-data {
+      padding-top: 14px;
+      font-size: larger;
+      font-family: auto;
+      font-weight: 600;
       margin-bottom: 0;
       text-transform: uppercase;
       color: #5138ee;
@@ -162,7 +169,7 @@ input, textarea{
 
 
 .grid{
-  gap: 3.2rem;
+  gap: 1.2rem;
 }
       .grid-two-column , .grid-three-column, .grid-four-column{
           grid-template-columns: 1fr;

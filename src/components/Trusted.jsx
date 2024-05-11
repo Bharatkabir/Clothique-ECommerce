@@ -48,7 +48,7 @@ function Trusted() {
 }
 
 const Wrapper = styled.section`
-  padding: 9rem 0;
+  padding: 5rem 0;
   background-color: ${({ theme }) => theme.colors.bg};
 
   .brand-section {
