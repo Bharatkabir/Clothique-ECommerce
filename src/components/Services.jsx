@@ -40,9 +40,11 @@ const Wrapper = styled.section`
   padding: 9rem 0;
 
   .grid {
-    gap: 4.8rem;
+    gap: 1.8rem;
   }
-
+  .grid grid-three-column {
+    flex: 1 1 calc(33.33% - 6rem);
+  }
   .services-1,
   .services-2,
   .services-3 {
