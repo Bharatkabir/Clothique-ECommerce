@@ -90,9 +90,10 @@ ${"" /* resuable code section  */}
   gap: 9rem;
 }
 
-/* Two-column layout */
+
 .grid-two-column > * {
   flex: 0 0 calc(51% - 15.5rem); 
+  
 }
 
 /* Three-column layout */
@@ -116,6 +117,7 @@ ${"" /* resuable code section  */}
 .card-data-flex{
   display: flex;
     justify-content: space-between;
+    padding: 0 15px;
 }
   .common-heading {
     font-size: 3rem;
