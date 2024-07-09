@@ -73,7 +73,7 @@ const Wrapper = styled.section`
       background-color: rgb(207 106 177 / 55%);
       position: absolute;
       left: 43%;
-      top: -3rem;
+      top: -3.9rem;
       z-index: -1;
     }
   }

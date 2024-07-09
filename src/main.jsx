@@ -20,6 +20,7 @@ import Products from "./components/Products";
 import SingleProduct from "./components/SingleProduct";
 import Cart from "./components/Cart.jsx";
 import Error from "./components/Error.jsx";
+import { Auth0Provider } from "@auth0/auth0-react";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -62,7 +63,15 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <Auth0Provider
+    domain="dev-lamsun6e8ti82n3x.us.auth0.com"
+    clientId="U2CQmEW3f1i7JrmzoG5ChJ6xx15nsBQH"
+    authorizationParams={{
+      redirect_uri: window.location.origin,
+    }}
+  >
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </Auth0Provider>
 );
